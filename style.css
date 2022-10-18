@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	list-style: none;
+	font-weight: 400;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,
+p {
+	color: #0f5f3a;
+	/* mix-blend-mode: difference; */
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-color: #56e5a1;
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #0f5f3a;
+	display: flex;
+	justify-content: center;
+	background-color: #56e5a1;
+}
+
+.header__container {
+	display: flex;
+	width: 90%;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: flex;
+	width: 250px;
+	justify-content: space-between;
+	color: #0f5f3a;
+}
+
+.circle__container {
+	position: relative;
+	top: 50px;
+	height: calc(100vh - 100px);
+	width: 100%;
+	border-bottom: 1px solid #0f5f3a;
+}
+
+.vertical__line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	background-color: #0f5f3a;
+	opacity: 0.4;
+}
+
+.horizontal__line {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	height: 1px;
+	background-color: #0f5f3a;
+	opacity: 0.4;
+}
+
+.circle__container__inner {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	height: 100%;
+	max-width: 1200px;
+	/* background-color: red; */
+}
+
+.circle {
+	position: absolute;
+	transform-origin: centre;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 36vh;
+	height: 36vh;
+	border: 2px dotted #0f5f3a;
+	border-radius: 50%;
+	will-change: transform;
+}
+
+.sticky__section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.plane {
+	border-top: 1px solid #0f5f3a;
+	display: flex;
+	justify-content: center;
+	background-color: #56e5a1;
+}
+
+.plane__one {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 0;
+}
+.plane__two {
+	position: sticky;
+	top: 50px;
+	height: calc(100vh - 50px);
+	width: 100%;
+	z-index: 2;
+}
+
+.plane__three {
+	position: sticky;
+	top: 100px;
+	height: calc(100vh - 100px);
+	width: 100%;
+	z-index: 2;
+}
+
+.container {
+	width: 90%;
+	height: 100vh;
+	max-width: 1200px;
+	padding-top: 0.8rem;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #0f5f3a;
+}
+
+.footer h1,
+.footer p {
+	color: #4acc8e;
+}
