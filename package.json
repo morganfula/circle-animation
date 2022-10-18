@@ -1,0 +1,25 @@
+{
+	"name": "circle-animation",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "parcel index.html --open",
+		"build": "parcel build index.html --public-url ./"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/morganfula/circle-animation.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/morganfula/circle-animation/issues"
+	},
+	"homepage": "https://github.com/morganfula/circle-animation#readme",
+	"devDependencies": {
+		"cssnano": "^5.1.13",
+		"parcel-bundler": "^1.12.5",
+		"postcss": "^8.4.18"
+	}
+}
